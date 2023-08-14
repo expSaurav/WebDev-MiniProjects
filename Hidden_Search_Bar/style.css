@@ -1,0 +1,51 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #7D5FFF, #7158E2);
+    
+}
+
+.inputBox {
+    width: 0; /* Initially set width to 0 */
+    position:relative;
+    left:45px;
+    height: 24px;
+ /* Remove border to make it less noticeable */
+    padding: 0 0; /* Add padding for text input */
+    transition: all 0.5s ease-in;
+    font-family: 'Courier New', Courier, monospace;
+    outline-style: none;
+
+   
+}
+.inputBox.active{
+    visibility: visible;
+    transform: translateX(-45px);
+    width: 200px;
+    height: 50px;
+    transition: all 0.5s ease-in;
+    border: none;
+    
+}
+.btn{
+    z-index: 100;
+    height: 50px;
+    width: 40px;
+    transform:translateX(12px);
+    transition: transform 0.5s ease-in;
+    background-color: whitesmoke;
+    border: none;
+}
